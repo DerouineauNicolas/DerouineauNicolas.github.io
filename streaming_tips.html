@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8 />
+        <title>Streaming tips</title>
+
+    </head>
+    <body>
+        <p>Use vlc to stream raspberry pi camera using MPEGTS over http (huge latency)</p>
+        <code>
+            raspivid -vf -hf -w 1200 -h 720 -fps 25 -t 0 -n -o - | cvlc stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:9091}' :demux=h264
+        </code> 
+
+        <p>Use ffmpeg to stream using MPEG Dash and a raspberry pi camera</p>
+        <code>
+            raspivid -n -w 1280 -h 720 -g 25 -fps 25 -vf -hf -t 86400000 -b 1800000 -ih -o – | ffmpeg -re -y -i – -c:v copy -f dash -min_seg_duration 1000 -use_template 1 -use_timeline 0 -init_seg_name init-$RepresentationID$.mp4 -media_seg_name test-$RepresentationID$-$Number$.mp4 test.mpd
+        </code>
+
+        <p>Use MP4Box to stream using MPEG Dash and a raspberry pi camera</p>
+        <code>
+            raspivid -n -w 1280 -h 720 -g 25 -fps 25 -vf -hf -t 86400000 -b 1800000 -ih -o test.mp4 & <br>
+            MP4Box -dash-live 2000 -no-cache test.mp4
+        </code> 
+
+
+        <p>Use ffmpeg to stream using MPEG Dash and MACOS (No hardware acceleration)</p>
+        <code>
+        ffmpeg -framerate 25 -f avfoundation -i "default" -map 0  -vcodec libx264 \
+            -preset ultrafast -vf format=yuv420p \
+            -profile:v baseline  \
+            -x264opts \
+            keyint=25:min-keyint=25:scenecut=-1  \
+            -f dash -seg_duration 1 -use_template 1 \
+            -use_timeline 0 -init_seg_name init-\$RepresentationID\$.mp4 -media_seg_name test-\$RepresentationID\$-\$Number\$.mp4 test.mpd
+        </code> 
+        
+        <code>
+        ffmpeg -stream_loop -1 -i file_example_MP4_480_1_5MG.mp4 -fflags +genpts -r 25 -acodec aac -vcodec libx264 -f mpegts "udp://236.1.1.1:5000?pkt_size=188&localaddr=127.0.0.1"
+        </code> 
+
+        
+    </body>
+
+</html>    
