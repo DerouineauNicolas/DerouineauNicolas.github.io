@@ -9,14 +9,6 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement(document.getElementById('root'))
 
-const linkStyle = {
-  //margin: "1rem",
-  textDecoration: "none",
-  color: 'white',
-  display: 'inline',
-  cursor: "pointer",
-};
-
 const closebuttonStyle = {
   textAlign: "right",
 };
@@ -127,19 +119,23 @@ export default function BlenderDemo() {
 
   return (
     <div>
-
-      This <div style={linkStyle} onClick={openModal}> scene </div> is a gltf I created with blender and imported in threejs.
+      <button
+        type="button"
+        className="btn-card btn-card-primary"
+        onClick={openModal}
+        style={{ border: "none", cursor: "pointer" }}
+      >
+        <i className="fa fa-cube"></i> Launch 3D Scene
+      </button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Demo GLB"
         id="theIdHere"
       >
-
-        <button style={closebuttonStyle} onClick={closeModal}>close</button>
+        <button style={closebuttonStyle} onClick={closeModal}>Close</button>
         <div ref={div3Dref} id="canvas"></div>
         <Demo />
-
       </Modal>
     </div>
   );

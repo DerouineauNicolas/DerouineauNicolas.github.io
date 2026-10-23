@@ -1,101 +1,63 @@
 let resumeData = {
-    "imagebaseurl":"https://the.ndero.ovh/",
-    "name": "Nicolas DEROUINEAU",
-    "role": "Fullstack develloper",
-    "linkedinId":"Your LinkedIn Id",
-    "skypeid": "Your skypeid",
-    "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
-    "socialLinks":[
-        {
-          "name":"linkedin",
-          "url":"https://www.linkedin.com/in/nicolas-derouineau-88a87b86/",
-          "className":"fa fa-linkedin"
-        },
-        {
-          "name":"github",
-          "url":"https://github.com/DerouineauNicolas",
-          "className":"fa fa-github"
-        }
-      ],
-    "aboutme":"",
-    "address":"France",
-    "website":"https://the.ndero.ovh/",
-    "education":[
-      {
-        "UniversityName":"The LNM Insitute of Information Technology",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Aug",
-        "YearOfPassing":"2020",
-        "Achievements":"Some Achievements"
-      },
-      {
-        "UniversityName":"Some University",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Jan",
-        "YearOfPassing":"2018",
-        "Achievements":"Some Achievements"
-      }
+  "imagebaseurl": "https://derouineanunicolas.github.io/",
+  "name": "Nicolas DEROUINEAU",
+  "role": "Senior Software Engineer",
+  "email": "nicodero72@gmail.com",
+  "linkedinId": "https://www.linkedin.com/in/nicolas-derouineau-88a87b86/",
+  "roleDescription": "Senior Software Engineer specialized in real-time multimedia architectures, low-level C++ systems, and modern full-stack web/cloud platforms.",
+  "socialLinks": [
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/nicolas-derouineau-88a87b86/",
+      "className": "fa fa-linkedin"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/DerouineauNicolas",
+      "className": "fa fa-github"
+    },
+    {
+      "name": "email",
+      "url": "mailto:nicodero72@gmail.com",
+      "className": "fa fa-envelope"
+    }
+  ],
+  "address": "France (Remote / Europe)",
+  "website": "https://derouineanunicolas.github.io",
+  "skills": {
+    "systems": [
+      "C++17 / C",
+      "POSIX Threads (pthreads)",
+      "Audio DSP (FIR, FFT)",
+      "Linux ALSA API",
+      "Android / Kotlin",
+      "Low-Latency Architecture"
     ],
-    "work":[
-      {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
-      },
-      {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
-      }
+    "streaming": [
+      "MPEG-DASH & HLS",
+      "FFmpeg C API & CLI",
+      "MP4Box",
+      "Web Audio API",
+      "WebGL / GLSL Shaders",
+      "Video Transcoding"
     ],
-    "skillsDescription":"Your skills here",
-    "skills":[
-      {
-        "skillname":"HTML5"
-      },
-      {
-        "skillname":"CSS"
-      },
-      {
-        "skillname":"Reactjs"
-      }
+    "web": [
+      "Python / Django / DRF",
+      "JavaScript / TypeScript",
+      "React.js",
+      "Node.js / Express",
+      "Socket.io / WebSockets",
+      "RESTful APIs"
     ],
-    "portfolio":[
-      {
-        "name":"project1",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
-      },
-      {
-        "name":"project2",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/project.jpg"
-      },
-      {
-        "name":"project3",
-        "description":"mobileapp",  
-        "imgurl":"images/portfolio/project2.png"
-      },
-      {
-        "name":"project4",
-        "description":"mobileapp",
-        "imgurl":"images/portfolio/phone.jpg"
-      }
-    ],
-    "testimonials":[
-      {
-        "description":"This is a sample testimonial",
-        "name":"Some technical guy"
-      },
-      {
-        "description":"This is a sample testimonial",
-        "name":"Some technical guy"
-      }
+    "devops": [
+      "Docker & Containerization",
+      "Linux / Debian / Ubuntu",
+      "CI / CD (GitHub Actions)",
+      "Git & GitFlow",
+      "Nginx",
+      "Linux Networking"
     ]
   }
-  
-  export default resumeData
+};
+
+export default resumeData;
