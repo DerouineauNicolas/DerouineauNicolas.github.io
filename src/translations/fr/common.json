@@ -1,0 +1,15 @@
+{
+    "title": "Bienvenue",
+    "description": "Bienvenue sur mon site internet. Je suis programmeur freelance et je peux vous aider sur la réalisation de projets informatiques. Je suis spécialiste en programmation Python/JavaScript/C++, ainsi qu'en devops.\n"
+    ,"CProgTitle": "App Desktop/Mobile",
+    "WebProgTitle": "App Fullstack",
+    "Home": "Acceuil",
+    "StreamingTitle" : "Streaming",
+    "WebIntro" : "En parallèle de mes activités professionnelles, j'ai travaillé sur deux projets opensource en tant que contributeurs principales:\n\n",
+    "Netflix" : "Ce projet écrit en Django/React est une plateforme de Streaming Video de type Netflix. Elle gere la classification automatiques des vidéos, les comptes utilisateurs (login, historique de visionnage, ...) , le téléchargement torrent et le protocole de streaming adaptatif MPEG DASH. Entierement Dockerisé, elle est déployé dans un cluster privé.\n\n",
+    "CollaborativeSequencer" : " Ce projet écrit en Nodejs est une plateforme de sequencage musicale interactive. Grace a l'utilisation des websockets, elle permet à plusieurs utilisateurs d'éditer une partition musicale simultanément. Elle est hébérgé à l'adresse suivante ",
+    "Hellqualizer" :"Ce projet est un essai personnelle afin de faire de l'égalisation audio a partir de banc de filtres à réponse impulsionnelles infinies (FIR). La partie décodage est géré par ffmpeg dans un thread dédié et la partie rendu est faite avec ALSA.",
+    "SpectralDrawer" :"Une application mobile écrite en Kotlin qui affiche le spectrogramme d'un son enregistré en temps réel. Elle utilise l'algorithme FFT pour calculer les bins de fréquences et l'API AudioRecord d'Android pour récupérer les échantillons du microphone.",
+    "radio":"Ma playlist personnelle est disponible en tant que stream. J'utilise un serveur mpd pour la diffuser",
+    "streamingTips":"Quelques conseils pour utiliser ffmpeg et mp4Box pour streamer du contenue en streaming adaptatif"
+}

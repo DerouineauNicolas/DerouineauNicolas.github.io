@@ -1,0 +1,16 @@
+{
+    "title": "Welcome",
+    "description": "My name is Nicolas DEROUINEAU and I'm a software engineer specialized in Python/JavaScript/C++ and Devops. I am available for freelance contracts within europe.\n"
+    ,"CProgTitle": "Desktop/Mobile App",
+    "WebProgTitle": "Web App",
+    "Home": "Home",
+    "StreamingTitle" : "Streaming",
+    "WebIntro" : "Besides my professional experiences, I have worked on two opensource web projects as main contributors:\n\n",
+    "Netflix" : "This project is a homemade netflix made with Django REST and REACT. It handles video input on the backend side, automatic classification and display.\n\n",
+    "CollaborativeSequencer" : " A collaborative sequencer based on freesound sound samples. It can be edited collaboratively in realtime by different users. We are developing this project with two friends. It is based on Express.js, Web Audio API and Socket.io frameworks. You can try it at ",
+    "Hellqualizer" :"Audio decoder/player with homemade equalizer (FIR based). This program uses ffmpeg as  an external library to demux/decode samples. Three differents threads (using pthreads) are running in parralel to handle the decoding, filtering and renderingprocess. The ALSA API is used for rendering.",
+    "SpectralDrawer" :"A kotlin Mobile App that draws the spectrogram of a recorded sound in realtime. It uses FFT algorithm to compute the frequency bins and Android AudioRecord API to get samples from the microphone.",
+    "radio":"My personnal playlist is available as a stream. It was created with mpd.",
+    "streamingTips":"On this page, you will find some of my experiments to do live video streaming from you webcam to your browser."
+
+}
