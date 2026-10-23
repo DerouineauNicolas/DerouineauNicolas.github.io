@@ -3,7 +3,6 @@ import BlenderDemo from './demo_blender1';
 
 export default class Blender extends Component {
   render() {
-    let resumeData = this.props.resumeData;
     return (
       <section id="blender">
         <div className="row">

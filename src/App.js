@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import resumeData from './resumeData';
@@ -7,12 +7,7 @@ import WebExperiment from './components/webexperiments';
 import Blender from './components/blender';
 import Streaming from './components/streaming';
 
-import {useTranslation} from "react-i18next";
-
 function App() {
-
-    const {t} = useTranslation("common");
-
     return (
         <div className="App">
             <Header resumeData={resumeData}/>

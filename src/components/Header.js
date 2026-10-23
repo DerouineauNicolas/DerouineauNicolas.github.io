@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import i18n from 'i18next';
 
 import { useTranslation } from "react-i18next";
@@ -32,7 +32,7 @@ export default function Header() {
          <header id="home">
             <nav id="nav-wrap">
                <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-               <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+               <a className="mobile-btn" href="#close" title="Hide navigation">Hide navigation</a>
                <ul id="nav" className="nav">
                   <li className="current"><a className="smoothscroll" href="#home">{t('Home')}</a></li>
                   <li><a className="smoothscroll" href="#web">{t('WebProgTitle')}</a></li>

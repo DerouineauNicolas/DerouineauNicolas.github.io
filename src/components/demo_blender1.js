@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
-import ReactDOM from 'react-dom';
+import React, { useEffect, useRef } from 'react';
 import Modal from 'react-modal';
 import '../index.css';
 import * as THREE from 'three';
@@ -33,7 +32,8 @@ const Demo = () => {
     var renderer = new THREE.WebGLRenderer();
 
     renderer.setSize(window.innerWidth / 2, window.innerHeight / 2);
-    mountRef.current.appendChild(renderer.domElement);
+    const currentMount = mountRef.current;
+    currentMount.appendChild(renderer.domElement);
 
     var controls = new OrbitControls(camera, renderer.domElement);
     controls.maxDistance = 80;
@@ -45,8 +45,6 @@ const Demo = () => {
 
     // Instantiate a loader
     var loader = new GLTFLoader();
-    var mixer = null;
-    var clock = new THREE.Clock();
 
     // Load a glTF resource
     loader.load(
@@ -86,13 +84,6 @@ const Demo = () => {
     scene.add(light2.target);
 
 
-    var geometry = new THREE.BoxGeometry(1, 1, 1);
-    var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    //var cube = new THREE.Mesh(geometry, material);
-
-    //scene.add(cube);
-    //camera.position.z = 5;
-
     var animate = function () {
       requestAnimationFrame(animate);
       //cube.rotation.x += 0.01;
@@ -111,7 +102,7 @@ const Demo = () => {
 
     animate();
 
-    return () => mountRef.current.removeChild(renderer.domElement);
+    return () => currentMount.removeChild(renderer.domElement);
   }, []);
 
   return (
@@ -122,7 +113,6 @@ const Demo = () => {
 }
 
 export default function BlenderDemo() {
-  var subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const div3Dref = React.useRef(null);
 
