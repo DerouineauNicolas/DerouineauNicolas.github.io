@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "N. Derouineau",
+  "name": "Nicolas Derouineau — Senior Software Engineer",
+  "description": "Portfolio and resume of Nicolas Derouineau, Senior Software Engineer specialized in real-time multimedia, C++ systems, and full-stack web.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +11,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#0d0f13",
+  "background_color": "#0d0f13"
 }

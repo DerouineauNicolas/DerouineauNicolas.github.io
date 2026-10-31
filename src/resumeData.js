@@ -1,5 +1,5 @@
 let resumeData = {
-  "imagebaseurl": "https://derouineanunicolas.github.io/",
+  "imagebaseurl": "https://derouineaunicolas.github.io/",
   "name": "Nicolas DEROUINEAU",
   "role": "Senior Software Engineer",
   "email": "nicodero72@gmail.com",
@@ -23,7 +23,7 @@ let resumeData = {
     }
   ],
   "address": "France (Remote / Europe)",
-  "website": "https://derouineanunicolas.github.io",
+  "website": "https://derouineaunicolas.github.io",
   "skills": {
     "systems": [
       "C++17 / C",

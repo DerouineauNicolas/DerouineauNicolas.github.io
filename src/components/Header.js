@@ -68,7 +68,7 @@ export default function Header({ resumeData }) {
                <ul className="hero-social-list">
                   {resumeData && resumeData.socialLinks && resumeData.socialLinks.map((item, idx) => (
                      <li key={idx}>
-                        <a href={item.url} target="_blank" rel="noopener noreferrer" title={item.name} aria-label={item.name}>
+                        <a href={item.url} target="_blank" rel="me noopener noreferrer" title={item.name} aria-label={item.name}>
                            <i className={item.className}></i>
                         </a>
                      </li>

@@ -8,7 +8,7 @@ export default function Footer({ resumeData }) {
           <ul className="social-links">
             {resumeData && resumeData.socialLinks && resumeData.socialLinks.map((item, idx) => (
               <li key={idx}>
-                <a href={item.url} target="_blank" rel="noopener noreferrer" aria-label={item.name}>
+                <a href={item.url} target="_blank" rel="me noopener noreferrer" aria-label={item.name}>
                   <i className={item.className} />
                 </a>
               </li>

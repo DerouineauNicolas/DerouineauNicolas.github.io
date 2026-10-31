@@ -37,7 +37,7 @@ export default function ContactUs({ resumeData }) {
               <a
                 href={resumeData.linkedinId}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="me noopener noreferrer"
                 className="contact-card-btn"
               >
                 <i className="fa fa-external-link"></i> {t('linkedinBtn')}
@@ -53,7 +53,7 @@ export default function ContactUs({ resumeData }) {
               <a
                 href="https://github.com/DerouineauNicolas"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="me noopener noreferrer"
                 className="contact-card-btn"
               >
                 <i className="fa fa-external-link"></i> {t('githubBtn')}

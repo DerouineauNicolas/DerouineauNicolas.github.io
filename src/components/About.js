@@ -48,10 +48,10 @@ export default function About({ resumeData }) {
               <div className="about-contact-item">
                 <strong>Links:</strong>
                 <div style={{ display: "flex", gap: "16px", marginTop: "4px" }}>
-                  <a href={resumeData.linkedinId} target="_blank" rel="noopener noreferrer" style={{ color: "#cbd5e1" }}>
+                  <a href={resumeData.linkedinId} target="_blank" rel="me noopener noreferrer" style={{ color: "#cbd5e1" }}>
                     <i className="fa fa-linkedin"></i> LinkedIn
                   </a>
-                  <a href="https://github.com/DerouineauNicolas" target="_blank" rel="noopener noreferrer" style={{ color: "#cbd5e1" }}>
+                  <a href="https://github.com/DerouineauNicolas" target="_blank" rel="me noopener noreferrer" style={{ color: "#cbd5e1" }}>
                     <i className="fa fa-github"></i> GitHub
                   </a>
                 </div>
